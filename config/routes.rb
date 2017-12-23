@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  resources :posts
-  resources :artists
-  resources :events
-  resources :users
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  scope :api do
+    resources :artists
+    resources :users
+    resources :events
+    resources :posts
+  end
 end
