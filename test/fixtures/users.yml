@@ -4,10 +4,8 @@ one:
   username: MyString
   first_name: MyString
   last_name: MyString
-  password: MyString
 
 two:
   username: MyString
   first_name: MyString
   last_name: MyString
-  password: MyString

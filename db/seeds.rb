@@ -6,19 +6,19 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 if User.find_by_username("Jen").nil?
-  User.create!(username: "Jen", first_name: "Jennifer", last_name: "Denchie", password: "123")
+  User.create!(username: "Jen", first_name: "Jennifer", last_name: "Denchie")
 else
   puts "User with name Jen already exists"
 end
 
 if User.find_by_username("CeeCee").nil?
-User.create!(username: "CeeCee", first_name: "Cherelle", last_name: "Cunningham", password: "456")
+User.create!(username: "CeeCee", first_name: "Cherelle", last_name: "Cunningham")
 else
   puts "User with name CeeCee already exists"
 end
 
 if User.find_by_username("liz").nil?
-User.create!(username: "liz", first_name: "Elizabeth", last_name: "Egunjobi", password: "789")
+User.create!(username: "liz", first_name: "Elizabeth", last_name: "Egunjobi")
 else
   puts "User with name liz already exists"
 end
