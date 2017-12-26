@@ -26,5 +26,6 @@ module BlackblossomsRails
         resource '*', :headers => :any, :methods => [:get, :post, :options]
       end
     end
+    config.eager_load_paths << Rails.root.join('lib')
   end
 end
