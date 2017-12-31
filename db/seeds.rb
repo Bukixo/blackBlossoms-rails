@@ -23,11 +23,11 @@ else
   puts "User with name liz already exists"
 end
 # POSTS
-p1 = Post.create!(date:DateTime.strptime("02/16/2019", "%m/%d/%Y"), heading: "sit amet" ,body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.") if Post.find_by_heading("sit amet").nil?
+p1 = Post.create!(date:DateTime.strptime("02/16/2019", "%d/%m/%Y"), heading: "sit amet" ,body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.") if Post.find_by_heading("sit amet").nil?
 
-p2 = Post.create!(date:DateTime.strptime("02/16/2019", "%m/%d/%Y"), heading: "arcu odio" ,body: "TNullam aliquam arcu odio, iaculis ornare nisi porttitor!") if Post.find_by_heading("arcu odio").nil?
+p2 = Post.create!(date:DateTime.strptime("02/16/2019", "%d/%m/%Y"), heading: "arcu odio" ,body: "TNullam aliquam arcu odio, iaculis ornare nisi porttitor!") if Post.find_by_heading("arcu odio").nil?
 
-p3 = Post.create!(date:DateTime.strptime("02/16/2019", "%m/%d/%Y"), heading: "metus in" ,body: "Aenean quis metus in leo finibus sagittis.?")if Post.find_by_heading("metus in").nil?
+p3 = Post.create!(date:DateTime.strptime("02/16/2019", "%d/%m/%Y"), heading: "metus in" ,body: "Aenean quis metus in leo finibus sagittis.?")if Post.find_by_heading("metus in").nil?
 
 # ARTISTS
 a1 = Artist.create!(name: "Deola", profile_image: "Some pic", statement: "Ut iaculis lectus sollicitudin, mattis ligula vitae, commodo urna.", artwork: "dog") if Artist.find_by_name("Deola").nil?
