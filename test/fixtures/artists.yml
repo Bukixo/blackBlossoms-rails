@@ -2,12 +2,10 @@
 
 one:
   name: MyString
-  profile_image: MyString
+  image: MyString
   statement: MyText
-  artwork: MyString
 
 two:
   name: MyString
-  profile_image: MyString
+  image: MyString
   statement: MyText
-  artwork: MyString

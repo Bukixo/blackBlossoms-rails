@@ -15,7 +15,7 @@ class ArtistsController < ApplicationController
 
   # POST /artists
   def create
-    @artist = Artist.new(artist_params)
+    @artist = Artist.new(Uploader.upload(artist_params))
 
     if @artist.save
       render json: @artist, status: :created, location: @artist
@@ -46,6 +46,6 @@ class ArtistsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def artist_params
-      params.require(:artist).permit(:name, :profile_image, :statement, :artwork)
+      params.require(:artist).permit(:name, :image, :statement, :base64)
     end
 end

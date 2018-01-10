@@ -1,3 +1,3 @@
 class Artist < ApplicationRecord
-  validates :name, :profile_image, :artwork, :statement, presence: true
+  mount_uploader :image, ImageUploader
 end
